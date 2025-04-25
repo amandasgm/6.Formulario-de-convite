@@ -1,6 +1,6 @@
 #app{
   display: grid;
-  grid-template-columns: 51.25% 48.75%;
+  grid-template-columns: 31.25% 68.75%;
   height: 100vh;
   padding: 1.25rem;
   background-color:var(--shape-background);
@@ -31,5 +31,11 @@ aside{
 }
 
 main{
+  background-color: var(--shape-body);
+  padding-block: 5rem;
+  padding-inline: 6rem;
 
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }

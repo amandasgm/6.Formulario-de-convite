@@ -48,6 +48,10 @@
   --text-body-xs: 500 .75rem var(--font-family3);
 }
 
+body{
+  color:#C8CDD0;
+}
+
 h1{
   font: var(--text-logo);
   color: var(--pink);
@@ -55,9 +59,15 @@ h1{
 
 h2{
   font: var(--text-heading-md);
+  color: var(--text-heading);
+}
+
+h3{
+  font: var(--text-heading-sm);
+  color: var(--text-heading);
 }
 
 p{
   font: var(--text-body-md);
-  color: var(--text-heading);
+  color: var(--text-body);
 }
