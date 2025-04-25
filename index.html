@@ -28,9 +28,40 @@
     <main>
       <h2>Crie seu convite</h2>
       
-      <form action="">
-        <fieldset>
-          <legend>Sobre o evento</legend>
+      <form>
+
+        <fieldset class="about">
+          <div class="forms-header">
+            <img src="assets/icons/calendar - color text-body.svg" alt="">
+            <legend>Sobre o evento</legend>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="title"> Título</label>
+            <input type="text" name="title" placeholder="Nome do evento">
+          </div>
+          <div class="input-cols">
+            <div class="input-wrapper">
+              <label for="initial"> Inicio</label>
+              <input type="date" name="initial">
+            </div>
+            <div class="input-wrapper">
+              <label for="fin">Fim</label>
+              <input type="date" name="fin">
+            </div>
+            <div class="input-wrapper">
+              <label for="type">Tipo</label>
+              <input type="text" name="type" placeholder="Presencial / online">
+            </div>
+            <div class="input-wrapper">
+              <label for="local">Local</label>
+              <input type="text" name="local">
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="description"> Descrição</label>
+            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+          </div>
         </fieldset>
       </form>
     </main>
