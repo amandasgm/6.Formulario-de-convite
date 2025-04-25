@@ -1,0 +1,63 @@
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap:var(--24px) ;
+
+    & .forms-header{
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font: var(--text-heading-sm);
+      color: var(--text-heading);
+
+        & img{
+          width: var(--24px);
+          height: var(--24px);
+          color: var(--text-body);
+        }
+    }
+
+    & .input-wrapper{
+      display: grid;
+      gap:.5rem;
+      font: var(--text-body-sm);
+      color: var(--text-body);
+    }
+
+    & input, textarea {
+      height: 3rem;
+      background-color: var(--input-base);
+      border: 1px solid var(--input-stroke);
+      border-radius: .5rem;
+      padding-inline: 1rem;
+      padding-block: 1rem;
+      font: var(--text-body-md);
+      color: var(--input-placeholder);
+    }
+
+    & input[type="date"]{
+    }
+
+    & textarea{
+      height: 8.5rem;
+    }
+
+    & .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    & .input-cols{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    input:focus, select:focus, textarea:focus, input[type="date"]:focus-within{ /* quando o objeto estiver clicado */
+      outline: 1px solid var(--brand-light);
+      outline-offset: .1px; /* hack para a borda funcionar em alguns navegadores (safari) */
+    }
+  }

@@ -46,6 +46,8 @@
   --text-body-md: 500 1rem var(--font-family3);
   --text-body-sm: 500 .875rem var(--font-family3);
   --text-body-xs: 500 .75rem var(--font-family3);
+
+  --24px:1.5rem;
 }
 
 body{

@@ -4,10 +4,12 @@
   height: 100vh;
   padding: 1.25rem;
   background-color:var(--shape-background);
+  gap: 1rem;
 }
 
 aside{
-  width: 400px;
+  width: 100%;
+  max-width: 25rem;
   height: 728px;
   position: relative;
 
@@ -31,6 +33,7 @@ aside{
 }
 
 main{
+  width: 100%;
   background-color: var(--shape-body);
   padding-block: 5rem;
   padding-inline: 6rem;
@@ -38,4 +41,7 @@ main{
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  width: 100%;
+
+  border-radius:.75rem;
 }
