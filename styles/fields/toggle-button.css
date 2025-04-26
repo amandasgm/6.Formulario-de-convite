@@ -30,6 +30,10 @@
     opacity: 0; /* tirar a bola do radio */
   }
 
+  & input:hover{
+    cursor: pointer;
+  }
+
   .radio-image{
     flex: 0 0 1rem;
     width: 1rem;
@@ -62,48 +66,6 @@
   &:has(:checked){
     background-color: var(--shape-hover);
     transition: .7s;
-    transform: translateX()
+    cursor: pointer;
   }
 }
-
-/* 
-.toggle-container {
-  position: relative;
-}
-
-input[type="checkbox"] {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.toggle-label {
-  width: 60px;
-  height: 30px;
-  background-color: #ccc;
-  border-radius: 30px;
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.toggle-label:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  background-color: white;
-  border-radius: 50%;
-  top: 2px;
-  left: 2px;
-  transition: transform 0.3s;
-}
-
-input[type="checkbox"]:checked + .toggle-label {
-  background-color: #4caf50;
-}
-
-input[type="checkbox"]:checked + .toggle-label:before {
-  transform: translateX(30px);
-} */
