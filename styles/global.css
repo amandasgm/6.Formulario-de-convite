@@ -52,6 +52,7 @@
 
 body{
   color:#C8CDD0;
+  background-color:var(--shape-background) ;
 }
 
 h1{

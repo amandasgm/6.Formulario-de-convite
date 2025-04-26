@@ -2,7 +2,7 @@ fieldset {
     border: none;
     display: flex;
     flex-direction: column;
-    gap:var(--24px) ;
+    gap:var(--24px);
 
     & .forms-header{
       display: flex;
@@ -23,6 +23,10 @@ fieldset {
       gap:.5rem;
       font: var(--text-body-sm);
       color: var(--text-body);
+
+      & #type{
+        margin-bottom: -1rem;
+      }
     }
 
     & input, textarea {
@@ -54,7 +58,7 @@ fieldset {
     & .input-cols{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      /* grid-template-rows: 1fr 1fr; */
       gap: 1rem;
     }
 
@@ -62,4 +66,8 @@ fieldset {
       outline: 1px solid var(--brand-light);
       outline-offset: .1px; /* hack para a borda funcionar em alguns navegadores (safari) */
     }
+  }
+  form{
+    display: grid;
+    gap: 3rem;
   }
