@@ -36,3 +36,8 @@ A estrutura é feita com `grid`:
   grid-template-columns: 51.25% 48.75%;
   height: 100vh;
 }
+```
+---
+
+⚠️ Dificultades
+- **switch button:** dificultade em fazer a palavra aparecer e mudar de acordo com a status do button
