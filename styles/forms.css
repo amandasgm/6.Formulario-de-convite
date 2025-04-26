@@ -36,7 +36,9 @@ fieldset {
       color: var(--input-placeholder);
     }
 
-    & input[type="date"]{
+    & input[type="date"]::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
     }
 
     & textarea{
