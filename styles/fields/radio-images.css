@@ -1,0 +1,48 @@
+.images-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: .5rem;
+  border-radius: .5rem;
+}
+
+.radio-grid-image{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: .25rem;
+  background-color: var(--input-stroke);
+  border-radius: .5rem;
+
+  & .radio-images{
+    width: 100%;
+    height: 100%;
+  }
+
+  & input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0;;
+  }
+
+  & input:hover{
+    cursor: pointer;
+  }
+  
+
+  & label{
+    display: flex;
+    font:var(--text-body-sm);
+    color: var(--text-heading);
+    justify-content: center;
+
+    padding-block: .5rem;
+  }
+
+  &:has(:checked){
+    outline: 2px solid var(--brand-light);
+    cursor: pointer;
+  }
+  
+}
