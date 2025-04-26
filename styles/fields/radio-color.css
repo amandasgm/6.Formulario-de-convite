@@ -1,0 +1,20 @@
+.radio-color{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: auto;
+}
+.radio-color input[type="radio"] {
+  width: 1.75rem;
+  height: 1.75rem;
+  appearance: none; /* remove aparência padrão */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  border: .25rem solid var(--shape-button);
+}
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px var(--brand-light) /* efeito extra opcional */
+}
+
