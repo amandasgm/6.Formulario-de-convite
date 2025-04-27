@@ -3,7 +3,9 @@
   grid-template-columns: 31.25% 68.75%;
   height: 100vh;
   padding: 1.25rem;
+  padding-bottom: 0px;
   gap: 1rem;
+  overflow: hidden;
 }
 
 aside{
@@ -36,6 +38,7 @@ main{
   background-color: var(--shape-body);
   padding-block: 5rem;
   padding-inline: 6rem;
+  overflow: auto;
 
   display: flex;
   flex-direction: column;
